@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Varun Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #ffffff;
+            color: #212529;
+        }
+
+        header {
+            background: #303132;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav {
+            
+            display: flex;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #a4caef;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hamburger */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav {
+                position: absolute;
+                top: 80px;
+                right: 20px;
+                background: hsl(240, 1%, 19%);
+                flex-direction: column;
+                width: 200px;
+                display: none;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                padding: 10px;
+                border-bottom: 1px solid #dee2e6;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.6s ease;
+        }
+
+        section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .skills,
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn-group {
+            margin-top: 10px;
+        }
+
+        .btn-group a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 8px 14px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            
+            margin-top: 40px;
+        }
+
+        .home {
+         /* border: 2px solid black; */
+         margin: 5px 20px 0px 20px;
+         display: flex;
+         margin: 20px;
+        justify-content: center; 
+        align-items: center;
+         
+         
+        }
+        .social {
+            display: flex;
+            gap: 20px;
+            
+        }
+         .social a {
+            text-decoration: none;
+            color: #212529;
+            font-size: 25px;    
+         }
+       
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Varun Londhe</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="navMenu">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+        </nav>
+    </header>
+      
+    <section class="hero show">
+        <h2>Hi, I'm <span>Varun Londhe</span></h2>
+        <p>A passionate software engineer with experience in web development (MERN Stack) and problem-solving.</p>
+        <br><br>
+        <a href="src/varun sde Resume.pdf" download><button>Download Resume</button></a>
+        <div class="home">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/varun-londhe-15125/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Varun15125" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:varunlondhe333@email.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>As a MERN Stack Developer, I specialize in developing dynamic and scalable web applications using MongoDB, Express.js,
+        React, and Node.js. I have hands-on experience in building RESTful APIs, integrating third-party services, and creating
+        responsive UI designs. I am driven by a passion for coding and solving complex problems.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">Frontend Development</div>
+            <div class="card">Backend Development</div>
+            <div class="card">Database Management</div>
+            <div class="card">RESTful APIs</div>
+            <div class="card">Problem Solving</div>
+            <div class="card">MERN Stack</div>
+            <div class="card">Generative AI</div>
+            <div class="card">Iot & Embedded Systems</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+
+            <div class="card">
+                <img src="images/Screenshot 2026-04-04 140957.png">
+                <h3>Text2Art</h3>
+                <p>Technology use HTML, CSS, JS,clipdrop API <br>
+                 Text2Art is a web application that generates images from text descriptions.
+                </p>
+                <div class="btn-group">
+                    <a href="https://github.com/Varun15125/AI-Text-To-Image-Generator"><button>GitHub</button></a>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/hotel-project.jpg">
+                <h3>Hotel Booking System</h3>
+                <p>Full stack MERN application for booking hotels.</p>
+                <div class="btn-group">
+                    <a href="#"><button>GitHub</button></a>
+                  
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="images/task-manager.jpg">
+                <h3>Task Manager App</h3>
+                <p>Manage daily tasks with CRUD features.</p>
+                <div class="btn-group">
+                    <a href="#"><button>GitHub</button></a>
+                   
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: varunlondhe333@email.com</p>
+        <p>Phone: +91-8010083661</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Varun Londhe | Portfolio</p>
+        <a href="mailto:varunlondhe333@email.com"><i class="fa-solid fa-envelope"></i></a>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        const sections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    sec.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
