@@ -20,6 +20,7 @@
      position: relative;
  }
 
+
  header h1 {
      color: #38bdf8;
  }
@@ -98,17 +99,18 @@
       }
     
          nav a {
-            margin: 20px 0;
-            font-size: 20px;
-            }
+         margin: 20px 0;
+         font-size: 20px;
+       
+        }
     
-            /* Fix toggle position */
-            .theme-toggle {
+         /* Fix toggle position */
+        .theme-toggle {
           position: absolute;
-           right: 60px;
-            top: 18px;
-            z-index: 1001;
-            }
+          right: 60px;
+          top: 18px;
+          z-index: 1001;
+          }
         }
 
      nav.active {
