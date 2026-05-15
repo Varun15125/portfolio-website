@@ -11,125 +11,10 @@
      color: #212529;
  }
 
- header {
-     background: #323334;
-     padding: 10px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     position: relative;
- }
-
-
- header h1 {
-     color: #38bdf8;
- }
-
- nav {
-
-     display: flex;
- }
-
- nav a {
-     margin: 0 10px;
-     color: #a4caef;
-     text-decoration: none;
- }
-
- nav a:hover {
-     color: #38bdf8;
- }
-
- /* Hamburger */
- .menu-toggle {
-    color:#323334 ;
-     display: none;
-     font-size: 24px;
-     cursor: pointer;
- }
- /* Hide hamburger by default (desktop) */
-.menu-toggle {
-    display: none;
-}
-
-
-
-  /* MOBILE RESPONSIVE FIX */
-@media (max-width: 768px) {
-
-     .menu-toggle {
-     display: block;
-     }
-    
-      header {
-      position: relative;
-      z-index: 1000;
-    }
-    
-     .menu-toggle {
-     display: block;
-     font-size: 24px;
-     cursor: pointer;
-      }
-    
-    nav {
-          position: fixed;
-      /* FIX: use fixed instead of absolute */
-      top: 0;
-      left: -100%;
-    /* hide off screen */
-       width: 100%;
-       height: 100vh;
-    /* full screen */
-      background: #ffffff;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-     transition: 0.3s ease;
-     z-index: 999;
-            }
-    
-      body.dark nav {
-      background: #121212;
-            }
-    
-    /* Show menu */
-         nav.active {
-         left: 0;
-      }
-    
-         nav a {
-         margin: 20px 0;
-         font-size: 20px;
-       
-        }
-    
-         /* Fix toggle position */
-        .theme-toggle {
-          position: absolute;
-          right: 60px;
-          top: 18px;
-          z-index: 1001;
-          }
-        }
-
-     nav.active {
-         display: flex;
-     }
-
-     nav a {
-         padding: 10px;
-         border-bottom: 1px solid #dee2e6;
-     }
-
-     .menu-toggle {
-         display: block;
-     }
- 
 
  .hero {
      text-align: center;
-     padding: 80px 20px;
+     padding: 50px 20px 30px;
  }
 
  .hero h2 {
@@ -141,7 +26,7 @@
  }
 
  section {
-     padding: 60px 20px;
+     padding: 40px 20px;
      max-width: 1000px;
      margin: auto;
      opacity: 0;

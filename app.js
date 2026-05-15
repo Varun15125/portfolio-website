@@ -1,18 +1,14 @@
-       function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
+const sections = document.querySelectorAll('section');
 
-        function toggleMenu() {
-            document.getElementById('navMenu').classList.toggle('active');
-        }
-        
+function showVisibleSections() {
+    sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
 
-        const sections = document.querySelectorAll('section');
-        window.addEventListener('scroll', () => {
-            sections.forEach(sec => {
-                const rect = sec.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    sec.classList.add('show');
-                }
-            });
-        });
+        if (rect.top < window.innerHeight - 100) {
+            section.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', showVisibleSections);
+window.addEventListener('load', showVisibleSections);
