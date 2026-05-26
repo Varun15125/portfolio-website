@@ -20,9 +20,9 @@ window.addEventListener('load', showVisibleSections);
 
     // Change button text
     if (document.body.classList.contains("dark-mode")) {
-      toggleBtn.textContent = "☀️";
+      toggleBtn.textContent = "☼";
     } else {
-      toggleBtn.textContent = "🌙";
+      toggleBtn.textContent = "☾";
       
     }
   });
