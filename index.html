@@ -4,170 +4,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Varun Engineer</title>
+    <meta name="description"
+        content="Portfolio of Varun Londhe, a MERN stack developer building responsive web apps, APIs, and AI-powered tools.">
+    <title>Varun Londhe | Software Engineer</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <button id="theme-toggle">☼</i></button></a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#top" aria-label="Varun Londhe home">
+                    <!-- <span class="brand-mark">VL</span> -->
+                    <span>Varun Londhe</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    <div class="navbar-nav ms-auto">
                         <a class="nav-link" href="#about">About</a>
                         <a class="nav-link" href="#skills">Skills</a>
-                        <a class="nav-link" href="#projects">Project</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                         <a class="nav-link" href="#certifications">Certifications</a>
-                        
-
-                       
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
+                    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
-      
-    <section class="hero show">
 
-        <h2>Hi, I'm <span>Varun Londhe</span></h2>
-        <p>A passionate software engineer with experience in web development (MERN Stack) and problem-solving.
-            I am eager to contribute my skills and enthusiasm to a dynamic team, continuously learning and growing in the field of software development.
-        </p>
-        <br><br>
-        <a href="src/varun sde Resume.pdf" download><button>Download Resume</button></a>
-        <div class="home">
-            <div class="social">
-                <a href="https://www.linkedin.com/in/varun-londhe-15125/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Varun15125" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:varunlondhe333@email.com"><i class="fa-solid fa-envelope"></i></a>
+    <main id="top">
+        <section class="hero show">
+            <div class="hero-copy">
+                <p class="eyebrow">MERN Stack Developer</p>
+                <h1>Building clean web experiences with practical engineering.</h1>
+                <p class="hero-text">
+                    Hi, I am Varun Londhe. I build responsive interfaces, REST APIs, and full-stack projects with
+                    JavaScript, React, Node.js, Express, and MongoDB.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary-custom" href="src/varun sde Resume.pdf" download>
+                        <i class="fa-solid fa-download"></i>
+                        Download Resume
+                    </a>
+                    <a class="btn btn-secondary-custom" href="#projects">
+                        <i class="fa-solid fa-layer-group"></i>
+                        View Projects
+                    </a>
+                </div>
+                <div class="social" aria-label="Social links">
+                    <a href="https://www.linkedin.com/in/varun-londhe-15125/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Varun15125" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:varunlondhe333@email.com" aria-label="Email Varun"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-panel" aria-label="Developer profile summary">
+                <div class="status-pill">
+                    <span></span>
+                    Open to software development roles
+                </div>
+                <div class="profile-card">
+                    <div class="profile-avatar">V</div>
+                    <div>
+                        <h2>Varun Londhe</h2>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+                <div class="hero-metrics">
+                    <div>
+                        <strong>8+</strong>
+                        <span>Core skills</span>
+                    </div>
+                    <div>
+                        <strong>4</strong>
+                        <span>Featured projects</span>
+                    </div>
+                    <div>
+                        <strong>MERN</strong>
+                        <span>Main stack</span>
+                    </div>
+                    <div>
+                        <strong>IOT</strong>
+                        <span>Hardware integration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>As a MERN Stack Developer, I specialize in developing dynamic and scalable web applications using MongoDB, Express.js,
-        React, and Node.js. I have hands-on experience in building RESTful APIs, integrating third-party services, and creating
-        responsive UI designs. I am driven by a passion for coding and solving complex problems.</p>
-    </section>
+        <section id="about" class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Focused on useful, scalable web applications.</h2>
+            </div>
+            <p class="section-copy">
+                As a MERN Stack Developer, I specialize in developing dynamic and scalable web applications using
+                MongoDB, Express.js, React, and Node.js. I have hands-on experience building RESTful APIs, integrating
+                third-party services, and creating responsive UI designs. I enjoy solving complex problems and turning
+                ideas into dependable products.
+            </p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="card">
-                <div class="card-front">Frontend </div>
-                <div class="card-details">Frontend Development
+        <section id="skills" class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">Skills</p>
+                <h2>Tools I use to ship full-stack features.</h2>
+            </div>
+            <div class="skills">
+                <article class="skill-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Frontend</h3>
                     <p>HTML, CSS, JavaScript, React</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-front">Backend</div>
-                <div class="card-details">Backend Development
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend</h3>
                     <p>Node.js, Express.js, REST APIs</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-front">Database</div>
-                <div class="card-details">Database Management
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Database</h3>
                     <p>MongoDB, MySQL, Firebase</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-front">RESTful APIs</div>
-                <div class="card-details">RESTful APIs
-                    <p>API Design, Integration, Authentication</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-front">Problem Solving</div>
-                <div class="card-details">Problem Solving
-                    <p>Data Structures, Algorithms, DSA</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-front">MERN Stack</div>
-                <div class="card-details">MERN Stack
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-plug"></i>
+                    <h3>RESTful APIs</h3>
+                    <p>API design, integration, authentication</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <h3>Problem Solving</h3>
+                    <p>Data structures, algorithms, DSA</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-cubes"></i>
+                    <h3>MERN Stack</h3>
                     <p>MongoDB, Express, React, Node.js</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>Generative AI</h3>
+                    <p>AI APIs, prompt engineering, LLMs</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>IoT</h3>
+                    <p>Arduino, Raspberry Pi, sensors</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2>Selected work with practical product thinking.</h2>
+            </div>
+            <div class="projects">
+                <article class="project-card">
+                    <img src="images/Screenshot 2026-04-04 140957.png" alt="Text2Art text to image generator interface">
+                    <div class="project-body">
+                        <p class="project-tag">AI Tool</p>
+                        <h3>Text2Art</h3>
+                        <p>Text-to-image web application that generates artwork from user prompts using the ClipDrop API.</p>
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>ClipDrop API</span>
+                        </div>
+                        <a class="project-link" href="https://github.com/Varun15125/AI-Text-To-Image-Generator"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/hotel.png" alt="Hotel booking system interface">
+                    <div class="project-body">
+                        <p class="project-tag">Booking Platform</p>
+                        <h3>Hotel Booking System</h3>
+                        <p>Responsive booking interface designed for browsing hotels, reviewing details, and starting reservations.</p>
+                        <div class="tech-list">
+                            <span>Frontend</span>
+                            <span>Responsive UI</span>
+                            <span>Forms</span>
+                        </div>
+                        <a class="project-link" href="https://github.com/Varun15125/Majorproject.git" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/meistertask_hero_en.png" alt="Task manager application board">
+                    <div class="project-body">
+                        <p class="project-tag">Productivity App</p>
+                        <h3>Task Manager App</h3>
+                        <p>Task management experience focused on organizing work, tracking progress, and keeping teams aligned.</p>
+                        <div class="tech-list">
+                            <span>JavaScript</span>
+                            <span>UI Design</span>
+                            <span>Workflow</span>
+                        </div>
+                        <span class="project-link disabled">
+                            <i class="fa-brands fa-github"></i>
+                            Coming Soon
+                        </span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="images/Screenshot 2026-04-04 140957.png" alt="Text2Art text to image generator interface">
+                    <div class="project-body">
+                        <p class="project-tag">AI Tool</p>
+                        <h3>Text2Art</h3>
+                        <p>Text-to-image web application that generates artwork from user prompts using the ClipDrop API.</p>
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>ClipDrop API</span>
+                        </div>
+                        <a class="project-link" href="https://github.com/Varun15125/AI-Text-To-Image-Generator" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="certifications" class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">Certifications</p>
+                <h2>Learning that supports the build work.</h2>
+            </div>
+            <div class="certifications-list">
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Full Stack Web Development - Udemy</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Java Algorithms and Data Structures - freeCodeCamp</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Responsive Web Design - freeCodeCamp</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Generative AI and agentic workflows - Outskill</span>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-front">Generative AI</div>
-                <div class="card-details">Generative AI
-                    <p>AI APIs, Prompt Engineering, LLMs</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-front">IoT & Embedded Systems</div>
-                <div class="card-details">IoT & Embedded Systems
-                    <p>Arduino, Raspberry Pi, Sensors</p>
-                </div>
-            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div>
+            <p>Ready to build something useful?</p>
+            <span>Contact me for software development opportunities and collaborations.</span>
         </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <img src="images/Screenshot 2026-04-04 140957.png" alt="Text2Art">
-                <h3>Text2Art</h3>
-                <p>Technology: HTML, CSS, JS, ClipDrop API</p>
-                <p>Text2Art is a web application that generates images from text descriptions.</p>
-                <div class="btn-group">
-                    <a href="https://github.com/Varun15125/AI-Text-To-Image-Generator" target="_blank"><button>GitHub</button></a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/hotel.png" alt="Hotel Booking System">
-                <h3>Hotel Booking System</h3>
-                <p></p>
-                <p></p>
-                <div class="btn-group">
-                    <a href="#" target="_blank"><button>GitHub</button></a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/meistertask_hero_en.png" alt="Task Manager App">
-                <h3>Task Manager App</h3>
-                <p></p>
-                <p></p>
-                <div class="btn-group">
-                    <a href="#" target="_blank"><button>GitHub</button></a>
-                </div>
-            </div>
+        <div class="footer-links">
+            <a href="mailto:varunlondhe333@email.com" aria-label="Email Varun"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+918010083662" aria-label="Call Varun"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://github.com/Varun15125" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Full Stack Web Development - Udemy</li>
-            <li>Java Algorithms and Data Structures - freeCodeCamp</li>
-            <li>Responsive Web Design - freeCodeCamp</li>
-            <li>Generative AI and agentic workflows - Outskill</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2026 Varun Londhe | Portfolio</p>
-        <a href="mailto:varunlondhe333@email.com"><i class="fa-solid fa-envelope"></i></a>
-        <a href="tel:+918010083662"><i class="fa-solid fa-phone"></i></a>
     </footer>
+
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
